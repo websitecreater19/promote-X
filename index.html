@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMU - Shop Like a Billionaire</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/temu-logo.png" alt="Temu Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#featured">Featured</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#deals">Hot Deals</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                </ul>
+            </nav>
+            <div class="cta-button">
+                <a href="https://temu.com" class="btn" target="_blank">Shop Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Shop Like a Billionaire on Temu!</h1>
+                <p>Discover amazing products at unbelievable prices. Limited time offers with up to 90% off!</p>
+                <div class="hero-buttons">
+                    <a href="https://temu.com" class="btn btn-primary" target="_blank">Start Shopping</a>
+                    <a href="#featured" class="btn btn-secondary">View Deals</a>
+                </div>
+                <div class="app-badges">
+                    <p>Download the app for exclusive deals:</p>
+                    <a href="https://temu.com/app" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store"></a>
+                    <a href="https://temu.com/app" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="featured" class="featured-products">
+        <div class="container">
+            <h2>Today's Featured Deals</h2>
+            <p class="subtitle">Limited quantities available at these prices!</p>
+            
+            <div class="countdown">
+                <p>Deals end in:</p>
+                <div class="timer">
+                    <span id="hours">12</span>h 
+                    <span id="minutes">34</span>m 
+                    <span id="seconds">56</span>s
+                </div>
+            </div>
+            
+            <div class="products-grid" id="featured-products">
+                <!-- Products will be loaded via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2>Shop by Category</h2>
+            <p class="subtitle">Find exactly what you're looking for</p>
+            
+            <div class="categories-grid">
+                <div class="category-card" data-category="electronics">
+                    <i class="fas fa-laptop"></i>
+                    <h3>Electronics</h3>
+                    <p>Smartphones, gadgets & more</p>
+                </div>
+                <div class="category-card" data-category="home">
+                    <i class="fas fa-home"></i>
+                    <h3>Home & Garden</h3>
+                    <p>Everything for your home</p>
+                </div>
+                <div class="category-card" data-category="fashion">
+                    <i class="fas fa-tshirt"></i>
+                    <h3>Fashion</h3>
+                    <p>Trendy clothes & accessories</p>
+                </div>
+                <div class="category-card" data-category="beauty">
+                    <i class="fas fa-spa"></i>
+                    <h3>Beauty</h3>
+                    <p>Skincare & cosmetics</p>
+                </div>
+                <div class="category-card" data-category="toys">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Toys & Games</h3>
+                    <p>Fun for all ages</p>
+                </div>
+                <div class="category-card" data-category="sports">
+                    <i class="fas fa-bicycle"></i>
+                    <h3>Sports & Outdoors</h3>
+                    <p>Gear for active lifestyle</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hot Deals Section -->
+    <section id="deals" class="hot-deals">
+        <div class="container">
+            <h2>🔥 Hot Deals 🔥</h2>
+            <p class="subtitle">Don't miss these limited-time offers</p>
+            
+            <div class="deals-carousel">
+                <div class="deal-slide">
+                    <div class="deal-tag">FLASH SALE</div>
+                    <img src="images/product1.jpg" alt="Wireless Earbuds">
+                    <h3>Wireless Earbuds</h3>
+                    <div class="price">
+                        <span class="original-price">$59.99</span>
+                        <span class="discounted-price">$12.99</span>
+                    </div>
+                    <a href="https://temu.com/p/wireless-earbuds" class="btn btn-small" target="_blank">Shop Now</a>
+                </div>
+                <div class="deal-slide">
+                    <div class="deal-tag">NEW</div>
+                    <img src="images/product2.jpg" alt="Smart Watch">
+                    <h3>Smart Watch</h3>
+                    <div class="price">
+                        <span class="original-price">$89.99</span>
+                        <span class="discounted-price">$24.99</span>
+                    </div>
+                    <a href="https://temu.com/p/smart-watch" class="btn btn-small" target="_blank">Shop Now</a>
+                </div>
+                <!-- More deal slides would be added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Shoppers Say</h2>
+            <p class="subtitle">Real reviews from happy customers</p>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"I couldn't believe the prices on Temu! Got a designer-style bag for 1/10 of the price elsewhere."</p>
+                    <div class="customer">
+                        <strong>- Sarah J.</strong>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>"Fast shipping and the quality exceeded my expectations. Will definitely shop here again!"</p>
+                    <div class="customer">
+                        <strong>- Michael T.</strong>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The app makes shopping so easy and I love the daily deals. Already saved hundreds!"</p>
+                    <div class="customer">
+                        <strong>- Emily R.</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Shop Like a Billionaire?</h2>
+            <p>Join millions of happy customers enjoying unbelievable prices every day.</p>
+            <a href="https://temu.com" class="btn btn-large" target="_blank">Start Saving Now</a>
+            <div class="trust-badges">
+                <div class="trust-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Secure Payments</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-truck"></i>
+                    <span>Free Shipping</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-undo"></i>
+                    <span>Easy Returns</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="https://temu.com/category/electronics" target="_blank">Electronics</a></li>
+                        <li><a href="https://temu.com/category/home" target="_blank">Home & Garden</a></li>
+                        <li><a href="https://temu.com/category/fashion" target="_blank">Fashion</a></li>
+                        <li><a href="https://temu.com/category/beauty" target="_blank">Beauty</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="https://temu.com/help" target="_blank">Customer Service</a></li>
+                        <li><a href="https://temu.com/returns" target="_blank">Returns</a></li>
+                        <li><a href="https://temu.com/shipping" target="_blank">Shipping Info</a></li>
+                        <li><a href="https://temu.com/contact" target="_blank">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="https://temu.com/about" target="_blank">About Temu</a></li>
+                        <li><a href="https://temu.com/careers" target="_blank">Careers</a></li>
+                        <li><a href="https://temu.com/blog" target="_blank">Blog</a></li>
+                        <li><a href="https://temu.com/press" target="_blank">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://facebook.com/temu" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/temu" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/temu" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://pinterest.com/temu" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <p>Get the latest deals:</p>
+                        <form id="newsletter-form">
+                            <input type="email" placeholder="Your email" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Temu. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="https://temu.com/privacy" target="_blank">Privacy Policy</a>
+                    <a href="https://temu.com/terms" target="_blank">Terms of Service</a>
+                    <a href="https://temu.com/cookies" target="_blank">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
